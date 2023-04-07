@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon-img.png" type="image/x-icon">
+
+    <title>Discover</title>
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <h1 class="heading"><a class="head-link" href="/tech">Discover</a></h1>
+            <p class="sub-head">News from all over the world</p>
+
+            <form class="item" action="/submit" method="post">
+                <button type="submit" name="button" value="tech">Tech</button>
+                <button type="submit" name="button" value="business">Business</button>
+                <button type="submit" name="button" value="entertainment">Entertainment</button>
+                <button type="submit" name="button" value="science">Science</button>
+                <button type="submit" name="button" value="sports">Sports</button>
+            </form>
+        </div>
+        
+        <% articles.forEach(function (article) { %>
+            <div class="news"></div>
+                <h1 class="title"><%= article.title %></h1>
+                <p class="author"><%= article.author %></p>
+                <p class="time"><%= article.publishedAt.slice(0, 10) %></p>
+                <div class="alignment">
+                    <div class="image-align">
+                        <img class="image" src="<%= article.urlToImage %>" alt="">
+                    </div>
+                    <div class="content-align">
+                        <p class="desc"><%= article.description %></p>
+                        <!-- <p class="desc"><%= article.content %></p> -->
+                        <p class="source"><%= article.source.name %></p>
+                        <a class="link" target="_blank" href="<%= article.url %>">Full article <img class="arrow" src="img/arrow.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        <% }); %>
+        <div class="nav-bg">
+            <a href="https://github.com/anuuraagg/discover-v1">Source code 🚀</a>
+        </div>
+        
+    </div>
+</body>
+</html>
