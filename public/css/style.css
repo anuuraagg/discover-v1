@@ -2,6 +2,23 @@ body{
     background-color: #000;
     color: #fff;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .header{
@@ -9,7 +26,10 @@ body{
     width: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center;   
+    align-items: left;
+    
+    margin-left: 1rem;
 }
 
 .heading{
@@ -24,12 +44,16 @@ body{
 }
 .news{
     margin-bottom: 3.2rem;
+    /* margin-left: 1rem; */
+
 }
 
 .image{
     height: 12rem;
     width: auto;
     border-radius: 4px;
+    margin-left: 1rem;
+    margin-top: 1.2rem;
 }
 button{
     cursor: pointer;
@@ -46,6 +70,7 @@ button{
     font-size: 1.2rem;
     display: flex;
     color: #c9c9c9;
+    margin-left: 1rem;
 }
 
 .head-link{
@@ -67,11 +92,14 @@ p{
     font-weight: 700;
     color: #a3a3a3;
     margin-bottom: -0.8rem;
+    margin-left: 1rem;
 }
 
 .title{
-    font-size: 1.5rem;
-    margin-bottom: -0.7rem;
+    font-size: 1.3rem;
+    margin-bottom: 0rem;
+    margin-left: 1rem;
+    width: 48rem;
 }
 
 .image-align{
@@ -83,23 +111,49 @@ p{
 }
 
 .time{
-    margin-bottom: 0rem;
+ /* margin-top: 1rem; */
+    margin-bottom: -0.8rem;
     font-weight: 700;
     color: #dedede;
+    margin-left: 1rem;
 }
 
 .content-align{
     width: 26rem;
-    margin-top: -1rem;
+    margin-top: 0rem;
 }
 
 .desc{
     font-size: 1.2rem;
     font-weight: 400;
+    margin-left: 1rem;
 }
 
 .source{
     font-weight: 700;
     color: #a3a3a3;
+    margin-left: 1rem;
 }
 
+/* .content{
+    margin-left: 1rem;
+} */
+
+.nav-bg{
+    height: 3.6rem;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: -0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #1e1e1e;
+}
+
+.src-link{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+}

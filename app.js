@@ -2,7 +2,7 @@ const express = require("express");
 const NewsAPI = require('newsapi');
 const bodyParser = require("body-parser");
 const app = express();
-const newsapi = new NewsAPI('Api_key');
+const newsapi = new NewsAPI('a87c87f999d340149e3b6e4c91fb7475');
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
@@ -20,6 +20,10 @@ app.get("/tech", async (req, res) => {
     console.log(error);
     res.render("index", { articles });
   }
+});
+
+app.get("/", async (req, res) => {
+  res.redirect('science')
 });
 
 
@@ -71,15 +75,11 @@ app.get("/sports", async (req, res) => {
   }
 });
 
-app.get("/", async (req, res) => {
-  res.redirect('tech')
-});
-
 app.post("/submit", (req, res) => {
   const category = req.body.button;
   res.redirect(`/${category}`);
 });
 
-app.listen(3000, () => {
-  console.log("Server started on port 3000");
+app.listen(4000, () => {
+  console.log("Server started on port 4000");
 });

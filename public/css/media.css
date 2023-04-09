@@ -1,0 +1,143 @@
+@media only screen and (max-width: 768px){
+    body{
+        background-color: #000;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .header{
+        height: 12rem;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+        
+        margin-left: 1rem;
+    }
+    
+    .heading{
+        /* font-family: 'Bowlby One', cursive; */
+        font-family: 'Pacifico', cursive;
+        margin-bottom: -1rem;
+    }
+    .sub-head{
+        /* font-family: 'Bowlby One', cursive; */
+        font-family: cursive;
+        line-height: -69rem;
+    }
+    .news{
+        margin-bottom: 3.2rem;
+        /* margin-left: 1rem; */
+    }
+    
+    .image{
+        height: 9rem;
+        width: auto;
+        border-radius: 4px;
+        margin-left: 1rem;
+    }
+    button{
+        cursor: pointer;
+        color: #fff;
+        background-color: #1e1e1e;
+        height: 2.6rem;
+        width: 6rem;
+        border: none;
+        border-radius: 8px;
+        margin-right: 5px;
+    }
+    
+    .link{
+        font-size: 1.2rem;
+        display: flex;
+        color: #c9c9c9;
+        margin-left: 1rem;
+    }
+    
+    .head-link{
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    p{
+        line-height: -12rem;
+    }
+    
+    .arrow{
+        height: 1.5rem;
+        width: auto;
+    }
+    
+    .author{
+        /* font-style: italic; */
+        font-weight: 700;
+        color: #a3a3a3;
+        margin-bottom: -0.8rem;
+        margin-left: 1rem;
+    }
+    
+    .title{
+        font-size: 1.3rem;
+        margin-bottom: -0.7rem;
+        margin-left: 1rem;
+    }
+    
+    .image-align{
+        margin-right: 1rem;
+    }
+    
+    .alignment{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .time{
+        margin-bottom: 0rem;
+        font-weight: 700;
+        color: #dedede;
+        margin-left: 1rem;
+    }
+    
+    .content-align{
+        width: 26rem;
+        margin-top: -1rem;
+    }
+    
+    .desc{
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-left: 1rem;
+    }
+    
+    .source{
+        font-weight: 700;
+        color: #a3a3a3;
+        margin-left: 1rem;
+    }
+    
+    /* .content{
+        margin-left: 1rem;
+    } */
+    
+    .nav-bg{
+        height: 3.8rem;
+        width: 100%;
+        margin-bottom: -1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background-color: #1e1e1e;
+    }
+    
+    .src-link{
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    
+}
