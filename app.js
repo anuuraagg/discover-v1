@@ -2,7 +2,7 @@ const express = require("express");
 const NewsAPI = require('newsapi');
 const bodyParser = require("body-parser");
 const app = express();
-const newsapi = new NewsAPI('a87c87f999d340149e3b6e4c91fb7475');
+const newsapi = new NewsAPI('Api_key');
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
