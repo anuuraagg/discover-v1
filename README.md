@@ -16,7 +16,7 @@ Before running the application, make sure you have the following installed:
 3. Get an API key from [News API](https://newsapi.org/) by signing up for a free account
 4. In the root directory, create a file named `.env`
 5. In the `.env` file, add the following line, replacing `<your-api-key>` with your actual API key:
-6. 6. Save the `.env` file
+6. Save the `.env` file
 7. Start the application: `npm start`
 
 
