@@ -22,7 +22,7 @@ body{
 }
 
 .header{
-    height: 12rem;
+    height: 14.4rem;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -35,11 +35,15 @@ body{
 .heading{
     /* font-family: 'Bowlby One', cursive; */
     font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-size: 3rem;
     margin-bottom: -1rem;
 }
 .sub-head{
     /* font-family: 'Bowlby One', cursive; */
-    font-family: cursive;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 1.2rem;
     line-height: -69rem;
 }
 .news{
@@ -59,11 +63,11 @@ button{
     cursor: pointer;
     color: #fff;
     background-color: #1e1e1e;
-    height: 2.6rem;
-    width: 6rem;
+    height: 2.8rem;
+    width: 7.2rem;
     border: none;
     border-radius: 8px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .link{
@@ -133,6 +137,7 @@ p{
     font-weight: 700;
     color: #a3a3a3;
     margin-left: 1rem;
+    margin-bottom: -0.1rem;
 }
 
 /* .content{
