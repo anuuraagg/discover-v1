@@ -1,4 +1,4 @@
-# Discover-v1
+# Discover-v1 🍉
 
 This is a web application that displays news articles from various categories such as business, entertainment, science, sports, and technology.
 
